@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <!-- Side Bar -->
+      <aside
+        class="d-flex d-lg-block d-none flex-column position-fixed garder px-4"
+      >
+        <!-- Logo -->
+        <div class="sidebar-logo garder">
+          <img src="../assets/images/logo.svg" alt="" />
+        </div>
+        <!-- hand Icon -->
+        <div
+          class="welcome-note d-flex garder mt-5 justify-content-evenly align-items-center"
+        >
+          <div class="hand-icon">
+            <img src="../assets/images/hand-icon.svg" alt="" />
+          </div>
+          <p class="m-0">Welcome, Eric!</p>
+        </div>
+        <!-- Tab Links -->
+        <div
+          class="side-wrapper garder d-flex flex-column justify-content-between"
+        >
+          <div class="tabs-wrapper garder mt-5">
+            <!-- Active Tab -->
+            <a href=""
+              ><div class="tab-active d-flex align-items-center">
+                <div class="tab-active-icon mx-4">
+                  <img src="../assets/images/dashboard icon.svg" alt="" />
+                </div>
+                <p class="m-0">Dashboard</p>
+              </div></a
+            >
+
+            <a href=""
+              ><div class="tab d-flex align-items-center">
+                <div class="tab-icon mx-4">
+                  <img src="../assets/images/account icon.svg" alt="" />
+                </div>
+                <p class="m-0">Account</p>
+              </div></a
+            >
+
+            <a href=""
+              ><div class="tab d-flex align-items-center">
+                <div class="tab-icon mx-4">
+                  <img src="../assets/images/history icon.svg" alt="" />
+                </div>
+                <p class="m-0">History</p>
+              </div></a
+            >
+
+            <a href=""
+              ><div class="tab d-flex align-items-center">
+                <div class="tab-icon mx-4">
+                  <img src="../assets/images/detect home icon.svg" alt="" />
+                </div>
+                <p class="m-0">Detect Home</p>
+              </div></a
+            >
+          </div>
+          <!-- Logout Wrapper -->
+          <div class="logout-wrapper garder">
+            <a href=""
+              ><div class="tab d-flex align-items-center">
+                <div class="tab-icon mx-4">
+                  <img src="../assets/images/information-icon.svg" alt="" />
+                </div>
+                <p class="m-0">Help & Information</p>
+              </div></a
+            >
+
+            <a href=""
+              ><div class="tab d-flex align-items-center">
+                <div class="tab-icon mx-4">
+                  <img src="../assets/images/logout-icon.svg" alt="" />
+                </div>
+                <p class="m-0">Log out</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </aside>
+
+      <div class="content-wrapper garder">
+        <nav class="garder d-flex justify-content-between align-items-center">
+          <!-- hamburger -->
+          <div
+            class="hamb-container d-flex garder align-items-center justify-content-between w-100 d-block d-md-none"
+          >
+            <div class="hamb-icon garder">
+              <img src="../assets/images/hamburger-icon.svg" alt="" />
+            </div>
+            <div class="nav-logo garder">
+              <img src="../assets/images/nav-logo.svg" alt="" />
+            </div>
+            <div class="pfp-icon mx-3">
+              <img src="../assets/images/pfp-icon.svg" alt="" />
+            </div>
+          </div>
+          <!--  Nav Search Bar -->
+          <div
+            class="garder d-md-flex justify-content-between align-items-center d-none"
+          >
+            <div class="search-bar-wrapper garder position-relative">
+              <div class="search-icon position-absolute">
+                <img src="../assets/images/search-icon.svg" alt="" />
+              </div>
+              <div><input type="text" /></div>
+            </div>
+
+            <!-- Mid Part of navbar -->
+            <div
+              class="mid-nav-wrapper d-md-flex align-items-center garder d-none"
+            >
+              <div class="arrow-icon">
+                <img src="../assets/images/left-arrow.svg" alt="" />
+              </div>
+
+              <div class="mid-icon mx-4">
+                <img src="../assets/images/detect home icon.svg" alt="" />
+              </div>
+              <p class="m-0">Detect Home</p>
+            </div>
+          </div>
+          <!-- Nav Info -->
+          <div
+            class="nav-info-wrapper d-md-flex align-items-center garder d-none"
+          >
+            <div class="info-icon">
+              <img src="../assets/images/blue-info-icon.svg" alt="" />
+            </div>
+            <div class="pfp-icon mx-3">
+              <img src="../assets/images/pfp-icon.svg" alt="" />
+            </div>
+            <div class="admin-name">
+              <p class="m-0">
+                Eric <br />
+                Wurtenberg
+              </p>
+            </div>
+          </div>
+        </nav>
+        <!-- Star + Rewards -->
+        <div
+          class="rewards-wrapper d-flex justify-content-center justify-content-md-start garder"
+        >
+          <div class="star-icon garder">
+            <img src="../assets/images/star-icon.svg" alt="" />
+          </div>
+          <p class="m-0 mx-4 garder">Rewards</p>
+        </div>
+        <!-- Grid Wrapper -->
+        <div class="grid-wrapper">
+          <div class="row my-3">
+            <!-- 1st col start -->
+            <div class="col-md-6 col-12 garder">
+              <div class="first-box px-3 garder">
+                <!-- Badge img + side content -->
+                <div class="badge-wrapper d-flex garder justify-content-evenly py-md-5 py-3">
+                  <div class="badge-img">
+                    <img src="../assets/images/badge-image.svg" class="img-fluid" alt="" />
+                  </div>
+                  <div
+                    class="badge-content ms-5 d-flex flex-column justify-content-evenly"
+                  >
+                    <p>STATUS</p>
+                    <p>Ambassador</p>
+                    <p>SINCE 19 AUGUST, 2024</p>
+                    <p>POINTS</p>
+                    <p>15</p>
+                    <div class="badge-button">
+                      <button>Download badge</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Badge img + side content End-->
+                <!-- Level card start -->
+                <div
+                  class="level-wrapper my-4 garder d-flex justify-content-center align-items-center"
+                >
+                  <div class="level-icon">
+                    <img
+                      src="../assets/images/ambassador-level-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="level-content ms-4 w-75">
+                    <div class="level-head d-flex align-items-center">
+                      <p>Ambassador</p>
+                      <p class="ms-5">(Level 1)</p>
+                    </div>
+
+                    <div class="level-mid-wrapper my-1">
+                      <div class="grey-level position-relative w-100">
+                        <div class="blue-level position-absolute w-75"></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="level-foot d-flex align-items-center justify-content-between"
+                    >
+                      <p>5 points to Elite</p>
+                      <p>(15/20 pts)</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Level card start -->
+              </div>
+              <!-- First Box End -->
+            </div>
+            <!-- 1st col end -->
+            <!-- 2nd Col -->
+            <div class="col-md-6 col-12 ">
+              <div
+                class="boxes-container d-flex justify-content-between flex-column h-100"
+              >
+                <!-- 2nd box -->
+                <div
+                  class="sec-box garder d-flex flex-column justify-content-between p-5 my-4 my-md-0"
+                >
+                  <div class="header-container garder">
+                    <p>YOUR REWARDS</p>
+                    <p>Ambassador</p>
+                  </div>
+
+                  <div
+                    class="left-border-wrapper  ms-5 d-flex flex-column justify-content-between garder"
+                  >
+                    <p>Downloadable Ambassador badge</p>
+                    <p class="my-2">Lounge access at major shows</p>
+                    <p>Access to sign up for the Meet the Expert in lounge</p>
+                  </div>
+
+                  <div class="buttons-container d-flex flex-column flex-md-row justify-content-end mx-md-0 mx-auto garder ">
+                    <button class="see-rew-btn mx-md-4 mx-0 ">See your rewards</button>
+                    <button class="view-rew-btn my-4 my-md-0">View all rewards</button>
+                  </div>
+                </div>
+                <!-- 2nd box end -->
+
+                <!-- refer card start  -->
+                <div class="refer-card garder p-5">
+                  <div class="refer-head">
+                    <p class="m-0">REFER YOUR FRIENDS</p>
+                  </div>
+                  <!-- Link Copy section -->
+                  <div class="refer-link-container garer mt-3 d-flex flex-md-row flex-column">
+                    <div class="link-wrapper position-relative ">
+                      <input
+                        class="px-4"
+                        type="text"
+                        value="https://www.link.com/abcde..."
+                      />
+                      <div class="copy-icon position-absolute ">
+                        <img src="../assets/images/Copy button.svg" class="w-100" alt="" />
+                      </div>
+                    </div>
+
+                    <div
+                      class="refer-icons d-flex w-100 align-items-center garder justify-content-between"
+                    >
+                      <a href=""
+                        ><img src="../assets/images/f-icon.svg" alt=""
+                      /></a>
+                      <a href=""
+                        ><img src="../assets/images/x-icon.svg" alt=""
+                      /></a>
+                      <a href=""
+                        ><img src="../assets/images/share-icon.svg" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                  <!-- Link Copy section End -->
+
+                  <div class="refer-foot mt-2">
+                    <p class="m-0">You have referred 0 friends</p>
+                  </div>
+
+                  <!-- refer card end  -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

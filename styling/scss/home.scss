@@ -1,0 +1,245 @@
+@import "./common/common";
+@import "./mixin/mixin";
+@import "./variables/variables";
+@import "./sidebar/sidebar";
+@import "./navbar/navbar";
+.garder {
+  border: 1px solid magenta;
+}
+.main {
+  background-color: $blue-F0F;
+  .content-wrapper {
+    margin-left: 25.4rem;
+    padding: 2rem;
+    @media screen and (max-width: 992px) {
+      margin: 0rem;
+      padding: 2rem;
+    }
+  }
+
+  .rewards-wrapper {
+    @include fontstyle(2.4rem, 600, $black);
+    margin-top: 6.4rem;
+  }
+  // 1st Col
+  .first-box {
+    background-color: $white;
+    height: 485px;
+    border-radius: 2.5rem;
+  }
+  .badge-content p {
+    margin: 0px;
+  }
+  .badge-content p:nth-child(1) {
+    @include fontstyle(1.6rem, 500, $grey-999);
+  }
+  .badge-content p:nth-child(2) {
+    @include fontstyle(3rem, 600, #e0b23f);
+  }
+  .badge-content p:nth-child(3) {
+    @include fontstyle(1.3rem, 500, $grey-999);
+  }
+  .badge-content p:nth-child(4) {
+    @include fontstyle(1.6rem, 500, $grey-999);
+  }
+  .badge-content p:nth-child(5) {
+    @include fontstyle(3.5rem, 600, $black);
+  }
+  .badge-button {
+    button {
+      @include button(17.2rem, 3.2rem, 2.5rem, $blue-307, $white, 1.6rem, 600);
+    }
+  }
+  // Level Section
+  .level-wrapper p {
+    margin: 0;
+  }
+  .level-head p:nth-child(1) {
+    @include fontstyle(2rem, 600, $black);
+  }
+  .level-head p:nth-child(2) {
+    @include fontstyle(1.4rem, 600, $grey-999);
+  }
+  .grey-level {
+    height: 8px;
+    border-radius: 8px;
+    background-color: #e6e6e6;
+  }
+  .blue-level {
+    height: 8px;
+    border-radius: 8px;
+    background-color: $blue-307;
+    top: 0;
+    left: 0;
+  }
+  .level-foot p {
+    @include fontstyle(1.6rem, 600, $grey-999);
+  }
+  // 2nd Col
+  .sec-box {
+    height: 300px;
+  }
+  .sec-box,
+  .refer-card {
+    background-color: $white;
+    border-radius: 2.5rem;
+    p {
+      margin: 0;
+    }
+    .header-container p:nth-child(1) {
+      @include fontstyle(1.6rem, 500, $grey-999);
+    }
+    .header-container p:nth-child(2) {
+      @include fontstyle(2.2rem, 600, #e0b23f);
+    }
+    .left-border-wrapper {
+      border-left: 5px solid #bbd8f9;
+
+      p {
+        @include fontstyle(1.6rem, 400, $black);
+        margin-left: 5rem;
+      }
+    }
+    .see-rew-btn {
+      @include button(17.2rem, 3.2rem, 2.5rem, $blue-307, $white, 1.6rem, 600);
+    }
+    .view-rew-btn {
+      @include button(
+        17.2rem,
+        3.2rem,
+        2.5rem,
+        transparent,
+        $blue-307,
+        1.6rem,
+        600
+      );
+      border: 1px solid $blue-307;
+    }
+  }
+  //3rd box
+  .refer-card {
+    height: 169px;
+    .refer-head {
+      @include fontstyle(1.6rem, 500, $grey-999);
+    }
+    .refer-foot {
+      @include fontstyle(1.4rem, 400, $grey-999);
+    }
+  }
+  .refer-link-container {
+    .link-wrapper {
+      input {
+        border: 2px solid #cccccc;
+        border-radius: 10px;
+        height: 50px;
+        width: 37rem;
+        @include fontstyle(1.6rem, 400, $black);
+      }
+      .copy-icon {
+        top: 0px;
+        right: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    // 1st Col
+    .first-box {
+      height: fit-content;
+    }
+    .sec-box {
+      height: 300px;
+      .see-rew-btn {
+        @include button(30rem, 3.6rem, 2.5rem, $blue-307, $white, 1.6rem, 600);
+      }
+      .view-rew-btn {
+        @include button(
+          30rem,
+          3.6rem,
+          2.5rem,
+          transparent,
+          $blue-307,
+          1.6rem,
+          600
+        );
+        border: 1px solid $blue-307;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    // 1st Col
+    .badge-img img {
+      width: 150px;
+    }
+    .badge-content p:nth-child(1) {
+      @include fontstyle(1.3rem, 500, $grey-999);
+    }
+    .badge-content p:nth-child(2) {
+      @include fontstyle(1.8rem, 600, #e0b23f);
+    }
+    .badge-content p:nth-child(3) {
+      @include fontstyle(1.4rem, 500, $grey-999);
+    }
+    .badge-content p:nth-child(4) {
+      @include fontstyle(1.4rem, 500, $grey-999);
+    }
+    .badge-content p:nth-child(5) {
+      @include fontstyle(2rem, 600, $black);
+    }
+    .badge-button {
+      button {
+        @include button(14rem, 2.5rem, 1.5rem, $blue-307, $white, 1.4rem, 600);
+      }
+    }
+    .level-head p:nth-child(1) {
+      @include fontstyle(1.6rem, 600, $black);
+    }
+    .level-head p:nth-child(2) {
+      @include fontstyle(1.2rem, 600, $grey-999);
+    }
+    .grey-level {
+      height: 6px;
+      border-radius: 6px;
+    }
+    .blue-level {
+      height: 6px;
+      border-radius: 6px;
+    }
+    .level-foot p {
+      @include fontstyle(1.4rem, 600, $grey-999);
+    }
+    .level-icon img {
+      width: 30px;
+    }
+
+    // 2nd Col
+
+    .sec-box,
+    .refer-card {
+      background-color: $white;
+      border-radius: 2.5rem;
+      p {
+        margin: 0;
+      }
+      .header-container p:nth-child(1) {
+        @include fontstyle(1.4rem, 500, $grey-999);
+      }
+      .header-container p:nth-child(2) {
+        @include fontstyle(1.8rem, 600, #e0b23f);
+      }
+      .left-border-wrapper {
+        border-left: 5px solid #bbd8f9;
+
+        p {
+          @include fontstyle(1.6rem, 400, $black);
+          margin-left: 4rem;
+        }
+      }
+    }
+  }
+}

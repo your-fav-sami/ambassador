@@ -1,0 +1,183 @@
+.home-page-wrapper {
+  // header-content-start
+  .home-header {
+    height: 650px;
+    background-image: url(../../assets/images/header-bg.png);
+    background-size: cover;
+    border-bottom: 6px solid $red-1;
+    @media screen and (max-width: 1500px) {
+      height: 560px;
+    }
+    @media screen and (max-width: 768px) {
+      height: auto;
+      background-image: url(../../assets/images/header-bg-tablet.png);
+      background-size: 100% 100%;
+    }
+    @media screen and (max-width: 440px) {
+      height: auto;
+      background-image: url(../../assets/images/header-bg-mbl.png);
+      background-size: 100% 100%;
+    }
+    .heading {
+      @include fontstyle(3.3rem, 500, $white);
+      line-height: 1.5;
+    }
+    .sub-heading {
+      @include fontstyle(15px, 400, $white);
+      line-height: 1.6;
+    }
+    .fast-btn {
+      @include button(200px, 50px, 1000px, $red-1, $white, 14px, 500);
+      cursor: pointer;
+      transition: 0.2s linear all;
+      &:hover {
+        background: darken($color: $red-1, $amount: 10);
+        background-color: white;
+        color: $blue-1;
+        box-shadow: -4px 4px 40px rgba(0, 0, 0, 0.6);
+      }
+    }
+    .currency-card {
+      @include size(450px, 520px);
+      position: relative;
+      background: $blue-1;
+      transform: translateY(100px);
+      @media screen and (max-width: 1500px) {
+        @include size(400px, 430px);
+      }
+      @media screen and (max-width: 768px) {
+        transform: translateY(50px);
+        @include size(400px, 400px);
+      }
+      @media screen and (max-width: 530px) {
+        @include size(100%, 380px);
+      }
+      @media screen and (max-width: 400px) {
+        @include size(100%, 400px);
+      }
+      .info-icon {
+        position: absolute;
+        top: -16px;
+        right: -16px;
+        cursor: pointer;
+      }
+      .custom-tooltip {
+        position: absolute;
+        background: $white;
+        border: 1px solid gray;
+        top: -145px;
+        right: 10px;
+        width: 330px;
+        z-index: 999999999;
+        clip-path: polygon(
+          0% 0%,
+          100% 0%,
+          100% 75%,
+          100% 73%,
+          100% 100%,
+          94% 85%,
+          0 85%
+        );
+        padding-bottom: 27px;
+        @media screen and (max-width: 400px) {
+          right: 0px;
+          width: 260px;
+          z-index: 999999999;
+        }
+        .title {
+          @include fontstyle(11px, 600, $black);
+        }
+        .sub-title {
+          @include fontstyle(9px, 700, $black);
+        }
+        .disc {
+          @include fontstyle(9px, 600, $black);
+        }
+      }
+      .card-heading {
+        @include fontstyle(2.1rem, 300, $white);
+        line-height: 1.5;
+        font-family: Arial;
+      }
+      .currency-changer-box {
+        background: $white;
+        .heading {
+          @include fontstyle(13px, 600, $blue-1);
+          font-family: Arial;
+          @media screen and (max-width: 575px) {
+            font-size: 11px;
+          }
+        }
+        input {
+          @include size(200px, 20px);
+          @extend %borderOutline;
+          font-size: 13px;
+          padding: 0px 0px 0px 8px;
+          padding: 0px 5px 0px 0px;
+          @media screen and (max-width: 530px) {
+            @include size(100%, 20px);
+            font-size: 11px;
+          }
+        }
+        .currency-select {
+          @include size(auto, 25px);
+          border-radius:2px;
+          font-size: 13px;
+          @extend %borderOutline;
+          border: 1px solid $gray-6;
+          @media screen and (max-width: 575px) {
+            font-size: 9px;
+          }
+        }
+        .country-select-wrapper {
+          border: 1px solid $gray-6;
+          border-radius:2px;
+          @include size(50px, 25px);
+          .country-select {
+            @include size(20px, 16px);
+            font-size: 13px;
+            @extend %borderOutline;
+            @media screen and (max-width: 575px) {
+              font-size: 9px;
+            }
+          }
+        }
+        .usd {
+          @include fontstyle(12px, 500, $black);
+          font-family: Arial;
+          width: 50%;
+          padding-right: 2px;
+          word-wrap: break-word;
+          @media screen and (max-width: 575px) {
+            font-size: 9px;
+          }
+        }
+        .fee-include {
+          @include fontstyle(12px, 500, $blue-1);
+          font-family: Arial;
+          width: 50%;
+          padding-left: 2px;
+          word-wrap: break-word;
+          text-align: right;
+          @media screen and (max-width: 575px) {
+            font-size: 9px;
+          }
+        }
+      }
+      .get-start-btn {
+        @include button(100%, 50px, 10px, $red-1, $white, 18px, 500);
+        margin-top: 40px;
+        cursor: pointer;
+        transition: 0.2s linear all;
+        &:hover {
+          background: darken($color: $red-1, $amount: 10);
+          box-shadow: -4px 4px 40px rgba(255, 255, 255, 0.2);
+        }
+        @media screen and (max-width: 400px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  // header-content-end
+}

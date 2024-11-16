@@ -1,0 +1,230 @@
+// 3. font-weight
+.weight-400 {
+  font-weight: 400 !important;
+}
+.weight-500 {
+  font-weight: 500 !important;
+}
+.weight-600 {
+  font-weight: 600 !important;
+}
+.weight-700 {
+  font-weight: 700 !important;
+}
+// line-height
+.l-height-p5 {
+  line-height: 1.5;
+}
+.l-height-p6 {
+  line-height: 1.6;
+}
+.l-height-p7 {
+  line-height: 1.7;
+}
+.l-height-p8 {
+  line-height: 1.8;
+}
+// 2.common-width
+.width-85 {
+  width: 85%;
+}
+.width-80 {
+  width: 80%;
+  max-width: 1200px;
+  // border: 2px solid red;
+}
+// 3. border-raduis
+.b-radius-10 {
+  border-radius: 10px;
+}
+.b-radius-8 {
+  border-radius: 8px;
+}
+.vr-small {
+  width: 1px;
+  height: 13px;
+  background: $gray-dark;
+}
+.vr-large {
+  width: 0px;
+  height: 90%;
+  border: 2px dashed lighten($color: $gray-dark, $amount: 48);
+}
+.text-wrap {
+  word-break: break-all;
+}
+.no-underline {
+  text-decoration: none !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-disabled {
+  cursor: not-allowed;
+}
+// error-message
+.error-msg {
+  @include fontstyle(10px, 500, $red-1);
+}
+.error-msg-big {
+  @include fontstyle(14px, 500, $red-1);
+}
+// home-page-common-fonts-size
+.home-15-red {
+  @include fontstyle(1.5rem, 500, $red-1);
+}
+.home-20-black {
+  @include fontstyle(2rem, 500, $black);
+}
+// button
+.google-btn {
+  @include size(100%, 50px);
+  border-radius: 10px;
+  display: inline-block;
+  line-height: 42px;
+  text-align: center;
+  padding: 4px;
+  background: #edf1f4;
+  border: 1px solid lighten($color: #707070, $amount: 40);
+  display: flex;
+  text-decoration: none !important;
+  cursor: pointer;
+  i {
+    @include fontstyle(22px, 500, $red-1);
+    width: 20%;
+  }
+  span {
+    @include fontstyle(13px, 600, $red-1);
+    display: block;
+    width: 80%;
+    background: $white;
+    border-radius: 10px;
+    transition: 0.2s linear all;
+  }
+  &:hover {
+    span {
+      @include hover($white, $red-1);
+    }
+  }
+}
+
+.facebook-btn {
+  @include size(100%, 50px);
+  border-radius: 10px;
+  display: inline-block;
+  line-height: 42px;
+  text-align: center;
+  padding: 4px;
+  background: #edf1f4;
+  border: 1px solid lighten($color: #707070, $amount: 40);
+  display: flex;
+  text-decoration: none !important;
+  cursor: pointer;
+  i {
+    @include fontstyle(22px, 500, $blue-1);
+    width: 20%;
+  }
+  span {
+    @include fontstyle(13px, 600, $blue-1);
+    display: block;
+    width: 80%;
+    background: $white;
+    border-radius: 10px;
+    transition: 0.2s linear all;
+  }
+  &:hover {
+    span {
+      @include hover($white, $blue-1);
+    }
+  }
+}
+// Back-Button
+.back-btn {
+  font-size: 25px;
+  color: $red-1;
+  transition: 0.1s linear all;
+  cursor: pointer;
+  &:hover {
+    color: $blue-1;
+  }
+}
+// Collection-point-Style-overWrite-code-start
+.collection-points-style {
+  background: $gray-5;
+}
+input#flat-demo {
+  font-size: 14px;
+  padding: 4px 0px 8px 5px;
+}
+#flat-demo-label {
+  font-size: 14px;
+  padding: 4px 0px 0px 5px;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeSmall.css-ptiqhd-MuiSvgIcon-root {
+  font-size: 17px;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+  font-size: 22px;
+}
+// Collection-point-Style-overWrite-code-end
+// Classes-for-Code-Slider-on-Homepage-start
+.carousel-control-prev-icon,
+.visually-hidden,
+.carousel-control-next-icon {
+  display: none !important;
+}
+.carousel-indicators button {
+  width: 7px;
+  border: 1px solid white !important;
+  margin: 0px 1.5px;
+}
+.carousel-indicators button.active {
+  border: 2px solid white !important;
+}
+
+// Classes-for-Code-Slider-on-Homepage-end
+.pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.outline-0 {
+  outline: none;
+}
+
+.tour-tooltip {
+  ol {
+    padding: 0px 10px;
+  }
+  p,
+  li {
+    @include fontstyle(11px, 500, $blue-1);
+  }
+}
+
+.css-gdh49b-MuiAutocomplete-listbox .MuiAutocomplete-option {
+  font-size: 11px;
+}
+// Token-Expiered.
+.token-expire-model-wrapper {
+  .heading {
+    padding: 20px 0px 0px 0px;
+    @include fontstyle(2.4rem, 500, $blue-1);
+  }
+  .sub-heading {
+    @include fontstyle(15px, 600, $blue-1);
+  }
+  .login-btn {
+    @include button(140px, 45px, 1000px, $blue-1, $white, 16px, 500);
+    cursor: pointer;
+    &:hover {
+      background: darken($color: $blue-1, $amount: 10);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "../mixin/mixin";
+
+aside{
+  background-color: $white;
+  width: 25.4rem;
+  height: 100vh;
+}
+.welcome-note p {
+  @include fontstyle(18px, 600, $black);
+}
+
+  .tab-active {
+    @include fontstyle(1.6rem, 500, $blue-307);
+    background-color: $blue-F0F;
+    height: 5.2rem;
+    border-radius: 1.5rem;
+    margin: 8px 0px;
+  }
+  .tab {
+    @include fontstyle(1.6rem, 500, $grey-999);
+    height: 5.2rem;
+    border-radius: 1.5rem;
+    margin: 8px 0px;
+  }
+  .side-wrapper{
+    height: 70%;
+  }
+

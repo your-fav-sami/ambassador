@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  max-width: 1750px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 52%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 49%;
+  }
+}
+aside {
+  background-color: #fff;
+  width: 25.4rem;
+  height: 100vh;
+}
+
+.welcome-note p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.tab-active {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #307DFF;
+  background-color: #F0F8FF;
+  height: 5.2rem;
+  border-radius: 1.5rem;
+  margin: 8px 0px;
+}
+
+.tab {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #999999;
+  height: 5.2rem;
+  border-radius: 1.5rem;
+  margin: 8px 0px;
+}
+
+.side-wrapper {
+  height: 70%;
+}
+
+.search-bar-wrapper .search-icon {
+  top: 50%;
+  left: 16px;
+  transform: translate(0%, -50%);
+}
+.search-bar-wrapper input {
+  height: 4.2rem;
+  width: 38rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.mid-nav-wrapper {
+  margin-left: 6.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #999999;
+}
+
+.nav-info-wrapper {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000;
+}
+
+@media screen and (max-width: 1100px) {
+  .search-bar-wrapper input {
+    width: 34rem;
+  }
+  .mid-nav-wrapper {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #999999;
+  }
+  .nav-info-wrapper {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+  }
+}
+.garder {
+  border: 1px solid magenta;
+}
+
+.main {
+  background-color: #F0F8FF;
+}
+.main .content-wrapper {
+  margin-left: 25.4rem;
+  padding: 2rem;
+}
+@media screen and (max-width: 992px) {
+  .main .content-wrapper {
+    margin: 0rem;
+    padding: 2rem;
+  }
+}
+.main .rewards-wrapper {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #000;
+  margin-top: 6.4rem;
+}
+.main .first-box {
+  background-color: #fff;
+  height: 485px;
+  border-radius: 2.5rem;
+}
+.main .badge-content p {
+  margin: 0px;
+}
+.main .badge-content p:nth-child(1) {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #999999;
+}
+.main .badge-content p:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #e0b23f;
+}
+.main .badge-content p:nth-child(3) {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #999999;
+}
+.main .badge-content p:nth-child(4) {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #999999;
+}
+.main .badge-content p:nth-child(5) {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #000;
+}
+.main .badge-button button {
+  width: 17.2rem;
+  height: 3.2rem;
+  border-radius: 2.5rem;
+  background-color: #307DFF;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.main .level-wrapper p {
+  margin: 0;
+}
+.main .level-head p:nth-child(1) {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+.main .level-head p:nth-child(2) {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #999999;
+}
+.main .grey-level {
+  height: 8px;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+}
+.main .blue-level {
+  height: 8px;
+  border-radius: 8px;
+  background-color: #307DFF;
+  top: 0;
+  left: 0;
+}
+.main .level-foot p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #999999;
+}
+.main .sec-box {
+  height: 300px;
+}
+.main .sec-box,
+.main .refer-card {
+  background-color: #fff;
+  border-radius: 2.5rem;
+}
+.main .sec-box p,
+.main .refer-card p {
+  margin: 0;
+}
+.main .sec-box .header-container p:nth-child(1),
+.main .refer-card .header-container p:nth-child(1) {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #999999;
+}
+.main .sec-box .header-container p:nth-child(2),
+.main .refer-card .header-container p:nth-child(2) {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #e0b23f;
+}
+.main .sec-box .left-border-wrapper,
+.main .refer-card .left-border-wrapper {
+  border-left: 5px solid #bbd8f9;
+}
+.main .sec-box .left-border-wrapper p,
+.main .refer-card .left-border-wrapper p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+  margin-left: 5rem;
+}
+.main .sec-box .see-rew-btn,
+.main .refer-card .see-rew-btn {
+  width: 17.2rem;
+  height: 3.2rem;
+  border-radius: 2.5rem;
+  background-color: #307DFF;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.main .sec-box .view-rew-btn,
+.main .refer-card .view-rew-btn {
+  width: 17.2rem;
+  height: 3.2rem;
+  border-radius: 2.5rem;
+  background-color: transparent;
+  color: #307DFF;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border: 1px solid #307DFF;
+}
+.main .refer-card {
+  height: 169px;
+}
+.main .refer-card .refer-head {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #999999;
+}
+.main .refer-card .refer-foot {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #999999;
+}
+.main .refer-link-container .link-wrapper input {
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+  height: 50px;
+  width: 37rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+}
+.main .refer-link-container .link-wrapper .copy-icon {
+  top: 0px;
+  right: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .main .first-box {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .main .sec-box {
+    height: 300px;
+  }
+  .main .sec-box .see-rew-btn {
+    width: 30rem;
+    height: 3.6rem;
+    border-radius: 2.5rem;
+    background-color: #307DFF;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  .main .sec-box .view-rew-btn {
+    width: 30rem;
+    height: 3.6rem;
+    border-radius: 2.5rem;
+    background-color: transparent;
+    color: #307DFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border: 1px solid #307DFF;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main .badge-img img {
+    width: 150px;
+  }
+  .main .badge-content p:nth-child(1) {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #999999;
+  }
+  .main .badge-content p:nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #e0b23f;
+  }
+  .main .badge-content p:nth-child(3) {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #999999;
+  }
+  .main .badge-content p:nth-child(4) {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #999999;
+  }
+  .main .badge-content p:nth-child(5) {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+  }
+  .main .badge-button button {
+    width: 14rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    background-color: #307DFF;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  .main .level-head p:nth-child(1) {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+  }
+  .main .level-head p:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #999999;
+  }
+  .main .grey-level {
+    height: 6px;
+    border-radius: 6px;
+  }
+  .main .blue-level {
+    height: 6px;
+    border-radius: 6px;
+  }
+  .main .level-foot p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #999999;
+  }
+  .main .level-icon img {
+    width: 30px;
+  }
+  .main .sec-box,
+  .main .refer-card {
+    background-color: #fff;
+    border-radius: 2.5rem;
+  }
+  .main .sec-box p,
+  .main .refer-card p {
+    margin: 0;
+  }
+  .main .sec-box .header-container p:nth-child(1),
+  .main .refer-card .header-container p:nth-child(1) {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #999999;
+  }
+  .main .sec-box .header-container p:nth-child(2),
+  .main .refer-card .header-container p:nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #e0b23f;
+  }
+  .main .sec-box .left-border-wrapper,
+  .main .refer-card .left-border-wrapper {
+    border-left: 5px solid #bbd8f9;
+  }
+  .main .sec-box .left-border-wrapper p,
+  .main .refer-card .left-border-wrapper p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+    margin-left: 4rem;
+  }
+}/*# sourceMappingURL=home.css.map */

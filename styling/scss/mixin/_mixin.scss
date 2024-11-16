@@ -1,0 +1,34 @@
+// Size-mixin
+@mixin size($width,$height) {
+    width: $width;
+    height: $height;
+    @content;
+}
+// Button mixin
+@mixin button($width,$height,$b-radius,$b-color,$color,$fontsize,$fontweight) {
+    width: $width;
+    height: $height;
+    border-radius: $b-radius;
+    background-color: $b-color;
+    color: $color;
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    @content;
+}
+// Font-Styling
+@mixin fontstyle($fontSize,$fontWeight,$color) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+    @content;
+}
+// hover mixin
+@mixin hover($color,$bg-color){
+    color: $color;
+    background-color: $bg-color;
+    @content;
+}
+

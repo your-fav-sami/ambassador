@@ -1,0 +1,42 @@
+
+.search-bar-wrapper {
+    .search-icon{
+        top: 50%;
+    left: 16px;
+    transform: translate(0%,-50%);
+    }
+    input{
+        height: 4.2rem;
+        width: 38rem;
+        border-radius: 2rem;
+        border: none;
+    }
+    
+
+}
+.mid-nav-wrapper {
+    margin-left: 6.4rem;
+    
+    @include fontstyle(1.6rem, 500, $grey-999);
+
+  }
+.nav-info-wrapper{
+    @include fontstyle(1.8rem, 600, $black);
+}
+
+
+@media screen and (max-width:1100px){
+    .search-bar-wrapper {
+        
+        input{
+         
+            width: 34rem;
+            
+        }}
+    .mid-nav-wrapper{
+        @include fontstyle(1.5rem, 500, $grey-999);
+    }
+    .nav-info-wrapper{
+        @include fontstyle(1.6rem, 600, $black);
+    }
+}
