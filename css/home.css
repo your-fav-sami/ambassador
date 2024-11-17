@@ -283,11 +283,14 @@ aside {
   font-weight: 400;
   color: #999999;
 }
+.main .refer-link-container .link-wrapper {
+  width: 70%;
+}
 .main .refer-link-container .link-wrapper input {
   border: 2px solid #cccccc;
   border-radius: 10px;
+  width: 100%;
   height: 50px;
-  width: 37rem;
   font-size: 1.6rem;
   font-weight: 400;
   color: #000;
@@ -295,6 +298,47 @@ aside {
 .main .refer-link-container .link-wrapper .copy-icon {
   top: 0px;
   right: 0px;
+}
+.main .collect-top p {
+  margin: 0;
+}
+.main .collect-top p:nth-child(1) {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #000;
+}
+.main .collect-top p:nth-child(2) {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+}
+.main .collect-cards-container {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.main .collect-cards-container .collect-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+}
+.main .collect-cards-container .star-wrapper {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #307DFF;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.main .collect-cards-container .collect-button button {
+  width: 100%;
+  height: 32px;
+  border-radius: 2.5rem;
+  background-color: #307DFF;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -329,6 +373,9 @@ aside {
     border: none;
     outline: none;
     border: 1px solid #307DFF;
+  }
+  .main .refer-link-container .link-wrapper {
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {

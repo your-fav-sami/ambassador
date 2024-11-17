@@ -128,16 +128,47 @@
   }
   .refer-link-container {
     .link-wrapper {
+      width: 70%;
       input {
         border: 2px solid #cccccc;
         border-radius: 10px;
+        width: 100%;
+
         height: 50px;
-        width: 37rem;
         @include fontstyle(1.6rem, 400, $black);
       }
       .copy-icon {
         top: 0px;
         right: 0px;
+      }
+    }
+  }
+
+  .collect-top {
+    p {
+      margin: 0;
+    }
+    p:nth-child(1) {
+      @include fontstyle(2.4rem, 600, $black);
+    }
+    p:nth-child(2) {
+      @include fontstyle(1.6rem, 400, $black);
+    }
+  }
+  .collect-cards-container {
+    background-color: $white;
+    border-radius: 20px;
+    
+    .collect-title {
+      @include fontstyle(1.6rem, 600, $black);
+    }
+    .star-wrapper {
+      @include fontstyle(1.6rem, 600, $blue-307);
+      height: fit-content;
+    }
+    .collect-button {
+      button {
+        @include button(100%, 32px, 2.5rem, $blue-307, $white, 1.6rem, 600);
       }
     }
   }
@@ -165,6 +196,11 @@
           600
         );
         border: 1px solid $blue-307;
+      }
+    }
+    .refer-link-container {
+      .link-wrapper {
+        width: 100%;
       }
     }
   }
