@@ -377,6 +377,9 @@ aside {
   .main .refer-link-container .link-wrapper {
     width: 100%;
   }
+  .main .block-card-wrapper .collect-button button {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 600px) {
   .main .badge-img img {
@@ -476,5 +479,29 @@ aside {
     font-weight: 400;
     color: #000;
     margin-left: 4rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main .collect-cards-container .block-card-wrapper .block-img img {
+    height: 200px;
+    width: 100%;
+  }
+  .main .collect-cards-container .block-card-wrapper .title-child {
+    width: 100%;
+  }
+  .main .collect-cards-container .block-card-wrapper .collect-button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main .collect-cards-container .block-card-wrapper .block-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .main .collect-cards-container .block-card-wrapper .title-child {
+    width: 100%;
+  }
+  .main .collect-cards-container .block-card-wrapper .collect-button {
+    width: 100%;
   }
 }/*# sourceMappingURL=home.css.map */

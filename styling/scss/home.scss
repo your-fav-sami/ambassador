@@ -158,7 +158,7 @@
   .collect-cards-container {
     background-color: $white;
     border-radius: 20px;
-    
+
     .collect-title {
       @include fontstyle(1.6rem, 600, $black);
     }
@@ -201,6 +201,13 @@
     .refer-link-container {
       .link-wrapper {
         width: 100%;
+      }
+    }
+    .block-card-wrapper {
+      .collect-button {
+        button {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -274,6 +281,46 @@
         p {
           @include fontstyle(1.6rem, 400, $black);
           margin-left: 4rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .main {
+    .collect-cards-container {
+      .block-card-wrapper {
+        .block-img{
+          img{
+            height: 200px;
+            width: 100%;
+          }
+        }
+        .title-child {
+          width: 100%;
+        }
+        .collect-button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .main {
+    .collect-cards-container {
+      .block-card-wrapper {
+        .block-img{
+          img{
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .title-child {
+          width: 100%;
+        }
+        .collect-button {
+          width: 100%;
         }
       }
     }
