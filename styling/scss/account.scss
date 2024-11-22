@@ -1,0 +1,59 @@
+@import "./common/common";
+@import "./mixin/mixin";
+@import "./variables/variables";
+@import "./sidebar/sidebar";
+@import "./navbar/navbar";
+.garder {
+  border: 1px solid magenta;
+}
+.main {
+  background-color: $blue-F0F;
+  p {
+    margin: 0;
+  }
+  .content-wrapper {
+    margin-left: 25.4rem;
+    padding: 2rem;
+    @media screen and (max-width: 992px) {
+      margin: 0rem;
+      padding: 2rem;
+    }
+    .b-border {
+      border-bottom: 1px solid #e6e6e6;
+    }
+    .account-title {
+      h1 {
+        @include fontstyle(2.4rem, 600, $black);
+      }
+    }
+    .account-wrapper {
+      background-color: $white;
+      border-radius: 15px;
+
+      h2 {
+        @include fontstyle(1.6rem, 600, $black);
+      }
+      h4 {
+        @include fontstyle(1.6rem, 400, $black);
+      }
+      .edit-button,.change-pass {
+        p {
+          @include fontstyle(1.6rem, 600, $blue-307);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    .content-wrapper {
+      .account-wrapper {
+        .account-pfp {
+          img {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}

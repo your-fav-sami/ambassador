@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/history.css" />
+
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <!-- Side Bar -->
+      <aside class="d-flex d-lg-block d-none flex-column position-fixed px-4">
+        <!-- Logo -->
+        <div class="sidebar-logo">
+          <img src="../assets/images/logo.svg" alt="" />
+        </div>
+        <!-- hand Icon -->
+        <div
+          class="welcome-note d-flex mt-5 justify-content-evenly align-items-center"
+        >
+          <div class="hand-icon">
+            <img src="../assets/images/hand-icon.svg" alt="" />
+          </div>
+          <p class="m-0">Welcome, Eric!</p>
+        </div>
+        <!-- Tab Links -->
+        <div class="side-wrapper d-flex flex-column justify-content-between">
+          <div class="tabs-wrapper mt-5">
+            <!-- Active Tab -->
+            <a href="../pages/dashboard-list-cards.html"
+              ><div class="tab d-flex align-items-center">
+                <div class="tab-icon mx-4">
+                  <img src="../assets/images/dashboard.svg" alt="" />
+                </div>
+                <p class="m-0">Dashboard</p>
+              </div></a
+            >
+
+            <a href="../pages/account.html"
+              ><div class="tab d-flex align-items-center">
+                <div class="tab-icon mx-4">
+                  <img src="../assets/images/account icon.svg" alt="" />
+                </div>
+                <p class="m-0">Account</p>
+              </div></a
+            >
+
+            <a href="../pages/history.html"
+              ><div class="tab-active d-flex align-items-center">
+                <div class="taba-ctive-icon mx-4">
+                  <img src="../assets/images/history-active.svg" alt="" />
+                </div>
+                <p class="m-0">History</p>
+              </div></a
+            >
+
+            <a href=""
+              ><div class="tab d-flex align-items-center">
+                <div class="tab-icon mx-4">
+                  <img src="../assets/images/detect home icon.svg" alt="" />
+                </div>
+                <p class="m-0">Detect Home</p>
+              </div></a
+            >
+          </div>
+          <!-- Logout Wrapper -->
+          <div class="logout-wrapper">
+            <a href=""
+              ><div class="tab d-flex align-items-center">
+                <div class="tab-icon mx-4">
+                  <img src="../assets/images/information-icon.svg" alt="" />
+                </div>
+                <p class="m-0">Help & Information</p>
+              </div></a
+            >
+
+            <a href=""
+              ><div class="tab d-flex align-items-center">
+                <div class="tab-icon mx-4">
+                  <img src="../assets/images/logout-icon.svg" alt="" />
+                </div>
+                <p class="m-0">Log out</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </aside>
+      <div class="content-wrapper">
+        <nav class="d-flex justify-content-between align-items-center">
+          <!-- hamburger -->
+          <div
+            class="hamb-container d-flex align-items-center justify-content-between w-100 d-block d-md-none"
+          >
+            <div class="hamb-icon">
+              <img src="../assets/images/hamburger-icon.svg" alt="" />
+            </div>
+            <div class="nav-logo">
+              <img src="../assets/images/nav-logo.svg" alt="" />
+            </div>
+            <div class="pfp-icon mx-3">
+              <img src="../assets/images/pfp-icon.svg" alt="" />
+            </div>
+          </div>
+          <!--  Nav Search Bar -->
+          <div
+            class="d-md-flex justify-content-between align-items-center d-none"
+          >
+            <div class="search-bar-wrapper position-relative">
+              <div class="search-icon position-absolute">
+                <img src="../assets/images/search-icon.svg" alt="" />
+              </div>
+              <div><input type="text" /></div>
+            </div>
+
+            <!-- Mid Part of navbar -->
+            <div class="mid-nav-wrapper d-md-flex align-items-center d-none">
+              <div class="arrow-icon">
+                <img src="../assets/images/left-arrow.svg" alt="" />
+              </div>
+
+              <div class="mid-icon mx-4">
+                <img src="../assets/images/detect home icon.svg" alt="" />
+              </div>
+              <p class="m-0">Detect Home</p>
+            </div>
+          </div>
+          <!-- Nav Info -->
+          <div class="nav-info-wrapper d-md-flex align-items-center d-none">
+            <div class="info-icon">
+              <img src="../assets/images/blue-info-icon.svg" alt="" />
+            </div>
+            <div class="pfp-icon mx-3">
+              <img src="../assets/images/pfp-icon.svg" alt="" />
+            </div>
+            <div class="admin-name">
+              <p class="m-0">
+                Eric <br />
+                Wurtenberg
+              </p>
+            </div>
+          </div>
+        </nav>
+        <!-- History Section Start -->
+        <div class="page-title mt-5">
+          <h1>History</h1>
+        </div>
+        <!-- Table Start -->
+        <div class="table-wrapper px-5">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="py-4">Activity</th>
+                <th scope="col" class="py-4">Points</th>
+                <th scope="col" class="py-4">Date</th>
+                <th scope="col" class="py-4">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row Start -->
+              <tr>
+                <th scope="row" class="activity-wrapper">
+                  <div
+                    class="d-flex   align-items-center"
+                  >
+                    <img src="../assets/images/checker.svg" alt="" />
+                    <p class=" mx-3">
+                      Share T1D DETECT Website on Social Media
+                    </p>
+                  </div>
+                </th>
+                <td class="">
+                  <div class="points-wrapper d-flex align-items-center">
+                    <img src="../assets/images/star-icon.svg" alt="" />
+                    <p class="mx-2">1</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="date-wrapper">
+                    <p>01/01/2024 12:00 AM</p>
+                  </div>
+                </td>
+                <td class="">
+                  <div class="status-wrapper">
+                    <p>Ambassador</p>
+                  </div>
+                </td>
+              </tr>
+              <!-- Row End -->
+
+               <!-- Row Start -->
+               <tr>
+                <th scope="row" class="activity-wrapper">
+                  <div
+                    class="d-flex   align-items-center"
+                  >
+                    <img src="../assets/images/checker.svg" alt="" />
+                    <p class=" mx-3">
+                      Share T1D DETECT Website on Social Media
+                    </p>
+                  </div>
+                </th>
+                <td class="">
+                  <div class="points-wrapper d-flex align-items-center">
+                    <img src="../assets/images/star-icon.svg" alt="" />
+                    <p class="mx-2">1</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="date-wrapper">
+                    <p>01/01/2024 12:00 AM</p>
+                  </div>
+                </td>
+                <td class="">
+                  <div class="status-wrapper">
+                    <p>Ambassador</p>
+                  </div>
+                </td>
+              </tr>
+              <!-- Row End -->
+
+               <!-- Row Start -->
+               <tr>
+                <th scope="row" class="activity-wrapper">
+                  <div
+                    class="d-flex   align-items-center"
+                  >
+                    <img src="../assets/images/checker.svg" alt="" />
+                    <p class=" mx-3">
+                      Share T1D DETECT Website on Social Media
+                    </p>
+                  </div>
+                </th>
+                <td class="">
+                  <div class="points-wrapper d-flex align-items-center">
+                    <img src="../assets/images/star-icon.svg" alt="" />
+                    <p class="mx-2">1</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="date-wrapper">
+                    <p>01/01/2024 12:00 AM</p>
+                  </div>
+                </td>
+                <td class="">
+                  <div class="status-wrapper">
+                    <p>Ambassador</p>
+                  </div>
+                </td>
+              </tr>
+              <!-- Row End -->
+
+               <!-- Row Start -->
+               <tr>
+                <th scope="row" class="activity-wrapper">
+                  <div
+                    class="d-flex   align-items-center"
+                  >
+                    <img src="../assets/images/checker.svg" alt="" />
+                    <p class=" mx-3">
+                      Share T1D DETECT Website on Social Media
+                    </p>
+                  </div>
+                </th>
+                <td class="">
+                  <div class="points-wrapper d-flex align-items-center">
+                    <img src="../assets/images/star-icon.svg" alt="" />
+                    <p class="mx-2">1</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="date-wrapper">
+                    <p>01/01/2024 12:00 AM</p>
+                  </div>
+                </td>
+                <td class="">
+                  <div class="status-wrapper">
+                    <p>Ambassador</p>
+                  </div>
+                </td>
+              </tr>
+              <!-- Row End -->
+
+               <!-- Row Start -->
+               <tr>
+                <th scope="row" class="activity-wrapper">
+                  <div
+                    class="d-flex   align-items-center"
+                  >
+                    <img src="../assets/images/checker.svg" alt="" />
+                    <p class=" mx-3">
+                      Share T1D DETECT Website on Social Media
+                    </p>
+                  </div>
+                </th>
+                <td class="">
+                  <div class="points-wrapper d-flex align-items-center">
+                    <img src="../assets/images/star-icon.svg" alt="" />
+                    <p class="mx-2">1</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="date-wrapper">
+                    <p>01/01/2024 12:00 AM</p>
+                  </div>
+                </td>
+                <td class="">
+                  <div class="status-wrapper">
+                    <p>Ambassador</p>
+                  </div>
+                </td>
+              </tr>
+              <!-- Row End -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/bad722d432.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

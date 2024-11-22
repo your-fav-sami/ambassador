@@ -1,0 +1,81 @@
+@import "./common/common";
+@import "./mixin/mixin";
+@import "./variables/variables";
+@import "./sidebar/sidebar";
+@import "./navbar/navbar";
+.garder {
+  border: 1px solid magenta;
+}
+.main {
+  background-color: $blue-F0F;
+  .content-wrapper {
+    margin-left: 25.4rem;
+    padding: 2rem;
+    @media screen and (max-width: 992px) {
+      margin: 0rem;
+      padding: 2rem;
+    }
+    p {
+      margin: 0;
+    }
+    .table-wrapper {
+      background-color: $white;
+      border-radius: 15px;
+      thead {
+        @include fontstyle(1.6rem, 600, $black);
+      }
+      td {
+        width: 20%;
+      }
+
+      .activity-wrapper {
+        width: 40%;
+        p {
+          @include fontstyle(1.6rem, 600, $black);
+        }
+        img {
+          width: 100px;
+        }
+      }
+      .points-wrapper {
+        p {
+          @include fontstyle(1.6rem, 600, $blue-307);
+        }
+      }
+      .date-wrapper {
+        p {
+          @include fontstyle(1.6rem, 500, $black);
+        }
+      }
+      .status-wrapper {
+        p {
+          @include fontstyle(1.6rem, 600, #e0b23f);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .main {
+    .content-wrapper {
+      .table-wrapper {
+        .activity-wrapper {
+          img {
+            width: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    .content-wrapper {
+      .table-wrapper {
+        .activity-wrapper {
+          width: 55%;
+        }
+      }
+    }
+  }
+}

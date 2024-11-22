@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  max-width: 1750px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 52%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 49%;
+  }
+}
+aside {
+  background-color: #fff;
+  width: 25.4rem;
+  height: 100vh;
+}
+
+.welcome-note p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.tab-active {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #307DFF;
+  background-color: #F0F8FF;
+  height: 5.2rem;
+  border-radius: 1.5rem;
+  margin: 8px 0px;
+}
+
+.tab {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #999999;
+  height: 5.2rem;
+  border-radius: 1.5rem;
+  margin: 8px 0px;
+}
+
+.side-wrapper {
+  height: 70%;
+}
+
+.search-bar-wrapper .search-icon {
+  top: 50%;
+  left: 16px;
+  transform: translate(0%, -50%);
+}
+.search-bar-wrapper input {
+  height: 4.2rem;
+  width: 38rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.mid-nav-wrapper {
+  margin-left: 6.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #999999;
+}
+
+.nav-info-wrapper {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000;
+}
+
+@media screen and (max-width: 1100px) {
+  .search-bar-wrapper input {
+    width: 34rem;
+  }
+  .mid-nav-wrapper {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #999999;
+  }
+  .nav-info-wrapper {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+  }
+}
+.garder {
+  border: 1px solid magenta;
+}
+
+.main {
+  background-color: #F0F8FF;
+}
+.main p {
+  margin: 0;
+}
+.main .content-wrapper {
+  margin-left: 25.4rem;
+  padding: 2rem;
+}
+@media screen and (max-width: 992px) {
+  .main .content-wrapper {
+    margin: 0rem;
+    padding: 2rem;
+  }
+}
+.main .content-wrapper .b-border {
+  border-bottom: 1px solid #e6e6e6;
+}
+.main .content-wrapper .account-title h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #000;
+}
+.main .content-wrapper .account-wrapper {
+  background-color: #fff;
+  border-radius: 15px;
+}
+.main .content-wrapper .account-wrapper h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+}
+.main .content-wrapper .account-wrapper h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+}
+.main .content-wrapper .account-wrapper .edit-button p, .main .content-wrapper .account-wrapper .change-pass p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #307DFF;
+}
+
+@media screen and (max-width: 768px) {
+  .main .content-wrapper .account-wrapper .account-pfp img {
+    width: 100px;
+  }
+}/*# sourceMappingURL=account.css.map */
