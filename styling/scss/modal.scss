@@ -1,0 +1,292 @@
+@import "./common/common";
+@import "./mixin/mixin";
+@import "./variables/variables";
+@import "./sidebar/sidebar";
+@import "./navbar/navbar";
+.garder {
+  border: 1px solid magenta;
+}
+// Task Complete Modal Start
+.modal-container {
+  max-width: 70rem;
+}
+.modal-content {
+  border-radius: 20px;
+}
+.task-comp-modal-container {
+  .task-comp-wrapper {
+    .bg-wrapper {
+      margin-top: 80px;
+      background-image: url("../../assets/images/task-comp-bg.svg");
+      background-position: center;
+      background-size: contain;
+
+      h1 {
+        @include fontstyle(4rem, 700, $black);
+      }
+      h3 {
+        @include fontstyle(2.4rem, 400, $black);
+        span {
+          @include fontstyle(2.4rem, 400, $blue-307);
+        }
+      }
+    }
+    h2 {
+      @include fontstyle(2.4rem, 600, $black);
+    }
+    h4 {
+      @include fontstyle(1.6rem, 600, $grey-999);
+    }
+    h5 {
+      @include fontstyle(3.5rem, 600, $black);
+    }
+    button {
+      @include button(14rem, 4rem, 2.5rem, $blue-307, $white, 1.6rem, 600);
+      &:hover {
+        @include button(
+          14rem,
+          4rem,
+          2.5rem,
+          transparent,
+          $blue-307,
+          1.6rem,
+          600
+        );
+        border: 1px solid $blue-307;
+      }
+    }
+  }
+}
+// Task Complete Modal End
+
+// Status upgrade modal
+.status-upgrade-modal-container {
+  .heading-wrapper {
+    h1 {
+      @include fontstyle(5rem, 600, $black);
+    }
+    h2 {
+      @include fontstyle(2.4rem, 400, $black);
+      span {
+        @include fontstyle(2.4rem, 400, $grey-999);
+      }
+    }
+  }
+  .status {
+    h1 {
+      @include fontstyle(1.6rem, 500, $grey-999);
+    }
+    h2 {
+      @include fontstyle(3rem, 600, $grey-999);
+    }
+    h3 {
+      @include fontstyle(12px, 500, $grey-999);
+    }
+  }
+  .points {
+    h1 {
+      @include fontstyle(1.6rem, 500, $grey-999);
+    }
+    h2 {
+      @include fontstyle(3.5rem, 600, $black);
+    }
+  }
+
+  // Level Section
+  .level-wrapper p {
+    margin: 0;
+  }
+  .level-head p:nth-child(1) {
+    @include fontstyle(2rem, 600, $black);
+  }
+  .level-head p:nth-child(2) {
+    @include fontstyle(1.4rem, 600, $grey-999);
+  }
+  .grey-level {
+    height: 8px;
+    border-radius: 8px;
+    background-color: #e6e6e6;
+  }
+  .blue-level {
+    height: 8px;
+    border-radius: 8px;
+    background-color: $blue-307;
+    top: 0;
+    left: 0;
+  }
+  .level-foot p {
+    @include fontstyle(1.6rem, 600, $grey-999);
+  }
+  .keep-going {
+    h1 {
+      @include fontstyle(2rem, 400, $black);
+    }
+  }
+}
+
+// reward modal
+.reward-modal {
+  .modal-container {
+    max-width: 500px;
+  }
+  .reward-badge-wrapper {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .reward-head {
+    h1 {
+      @include fontstyle(2.4rem, 600, $black);
+    }
+  }
+  .reward-image {
+    img {
+      width: 150px;
+    }
+  }
+  .badge-text {
+    h1 {
+      @include fontstyle(2.5rem, 600, $grey-999);
+    }
+    h2 {
+      @include fontstyle(1.6rem, 400, $grey-999);
+    }
+  }
+  .tick-wrapper {
+    margin-top: 1rem;
+    h1 {
+      @include fontstyle(1.6rem, 400, $black);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-container {
+    max-width: 60rem;
+  }
+  .status-upgrade-modal-container {
+    .image {
+      img {
+        width: 200px;
+      }
+    }
+    .level-icon {
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .modal-container {
+    max-width: 40rem;
+  }
+  .task-comp-modal-container {
+    .task-comp-wrapper {
+      .logo {
+        img {
+          width: 60px;
+        }
+      }
+      .bg-wrapper {
+        h1 {
+          @include fontstyle(2rem, 700, $black);
+        }
+        h3 {
+          @include fontstyle(1.2rem, 400, $black);
+          span {
+            @include fontstyle(1.2rem, 400, $blue-307);
+          }
+        }
+      }
+      h2 {
+        @include fontstyle(1.2rem, 600, $black);
+      }
+      h4 {
+        @include fontstyle(1.2rem, 600, $grey-999);
+      }
+      h5 {
+        @include fontstyle(1.8rem, 600, $black);
+      }
+      button {
+        @include button(10rem, 3rem, 2.5rem, $blue-307, $white, 1.2rem, 600);
+      }
+    }
+  }
+  // Status upgrade modal
+  .status-upgrade-modal-container {
+    .bg {
+      top: 150px;
+    }
+    .heading-wrapper {
+      h1 {
+        @include fontstyle(16px, 600, $black);
+      }
+      h2 {
+        @include fontstyle(12px, 400, $black);
+        span {
+          @include fontstyle(12px, 400, $grey-999);
+        }
+      }
+    }
+    .image {
+      img {
+        width: 140px;
+      }
+    }
+    .status {
+      h1 {
+        @include fontstyle(12px, 500, $grey-999);
+      }
+      h2 {
+        @include fontstyle(16px, 600, $grey-999);
+      }
+      h3 {
+        @include fontstyle(10px, 500, $grey-999);
+      }
+    }
+    .points {
+      h1 {
+        @include fontstyle(12px, 500, $grey-999);
+      }
+      h2 {
+        @include fontstyle(16px, 600, $black);
+      }
+    }
+
+    // Level Section
+    .level-wrapper p {
+      margin: 0;
+    }
+    .level-head p:nth-child(1) {
+      @include fontstyle(12px, 600, $black);
+    }
+    .level-head p:nth-child(2) {
+      @include fontstyle(8px, 600, $grey-999);
+    }
+    .level-icon {
+      img {
+        width: 20px;
+      }
+    }
+    .grey-level {
+      height: 6px;
+      border-radius: 6px;
+    }
+    .blue-level {
+      height: 6px;
+      border-radius: 6px;
+    }
+    .level-foot p {
+      @include fontstyle(8px, 600, $grey-999);
+    }
+    .keep-going {
+      h1 {
+        @include fontstyle(14px, 400, $black);
+      }
+    }
+  }
+  // reward modal
+  .reward-modal {
+    .modal-container {
+      max-width: 80%;
+    }
+  }
+}
