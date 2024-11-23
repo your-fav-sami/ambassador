@@ -169,6 +169,22 @@
     .collect-button {
       button {
         @include button(100%, 32px, 2.5rem, $blue-307, $white, 1.6rem, 600);
+        &:hover{
+        @include button(100%, 32px, 2.5rem, $white, $blue-307, 1.6rem, 600);
+        border: 1px solid $blue-307;
+
+        }
+      }
+    }
+    .see-all{
+      a{
+      @include fontstyle(1.6rem, 600, $blue-307);
+      border: 1px solid $blue-307;
+&:hover{
+  border: none;
+  background-color: $blue-307;
+  color: $white;
+}
       }
     }
   }

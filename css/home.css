@@ -340,6 +340,30 @@ aside {
   border: none;
   outline: none;
 }
+.main .collect-cards-container .collect-button button:hover {
+  width: 100%;
+  height: 32px;
+  border-radius: 2.5rem;
+  background-color: #fff;
+  color: #307DFF;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border: 1px solid #307DFF;
+}
+.main .collect-cards-container .see-all a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #307DFF;
+  border: 1px solid #307DFF;
+}
+.main .collect-cards-container .see-all a:hover {
+  border: none;
+  background-color: #307DFF;
+  color: #fff;
+}
 
 @media screen and (max-width: 768px) {
   .main .first-box {
