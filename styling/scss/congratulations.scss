@@ -1,0 +1,125 @@
+@import "./common/common";
+@import "./mixin/mixin";
+@import "./variables/variables";
+@import "./sidebar/sidebar";
+@import "./navbar/navbar";
+.garder {
+  border: 1px solid magenta;
+}
+.main {
+  background-image: url("../../assets/images/congrats-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $blue-F0F;
+  height: 100vh;
+  .top-wrapper {
+    .detect-home {
+      p {
+        @include fontstyle(1.6rem, 500, $grey-999);
+      }
+    }
+  }
+  .card-container {
+    .card {
+      background-color: rgb(255, 255, 255);
+      border-radius: 25px;
+      border: none;
+      width: 35%;
+    }
+    .text-wrapper {
+      h1 {
+        @include fontstyle(3.2rem, 700, $black);
+      }
+      p {
+        @include fontstyle(1.8rem, 500, $black);
+      }
+    }
+    .badge-content p {
+      margin: 0px;
+    }
+    .badge-content p:nth-child(1) {
+      @include fontstyle(1.6rem, 500, $grey-999);
+    }
+    .badge-content p:nth-child(2) {
+      @include fontstyle(3rem, 600, #e0b23f);
+    }
+    .badge-content p:nth-child(3) {
+      @include fontstyle(1.3rem, 500, $grey-999);
+    }
+    .badge-content p:nth-child(4) {
+      @include fontstyle(1.6rem, 500, $grey-999);
+    }
+    .badge-content p:nth-child(5) {
+      @include fontstyle(3.5rem, 600, $black);
+    }
+    .badge-button {
+      button {
+        @include button(
+          17.2rem,
+          3.2rem,
+          2.5rem,
+          $blue-307,
+          $white,
+          1.6rem,
+          600
+        );
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .main {
+    .card-container {
+      .card {
+        width: 50%;
+        .badge-wrapper {
+          .badge-img {
+            img {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    .card-container {
+      .card {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+    .main {
+      .card-container {
+        .card {
+          .text-wrapper {
+            h1 {
+              @include fontstyle(2.4rem, 700, $black);
+            }
+            p {
+              @include fontstyle(1.6rem, 500, $black);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
