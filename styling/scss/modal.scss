@@ -157,6 +157,80 @@
     }
   }
 }
+// Table modal
+.table-modal-wrapper {
+  .table-modal-container {
+    max-width: 920px;
+  }
+  .table-wrapper {
+    .side-border{
+      border-left: 3px solid #B3B3B3;
+      border-right: 3px solid #B3B3B3;
+    }
+  
+  .bottom-border{
+    border-bottom: 3px solid #b3b3b3;
+
+  }
+    .head-row {
+      td{
+        border: none
+      }
+      .top-border{
+        border-top: 3px solid #b3b3b3;
+        border-left: 3px solid #B3B3B3;
+      border-right: 3px solid #B3B3B3;
+      border-radius: 8px;
+      }
+      h2 {
+        @include fontstyle(1.4rem, 400, #cccccc);
+      }
+      .ambassador {
+        width: 15%;
+        h1 {
+          @include fontstyle(1.8rem, 600, #d39750);
+        }
+      }
+      .elite {
+        width: 15%;
+        padding-top: 30px;
+        img{
+          width: 40px;
+          top: -30px;
+          transform: translate(-50%,0%);
+        }
+        h1 {
+          @include fontstyle(1.8rem, 600, #b3b3b3);
+        }
+      }
+      .premier {
+        width: 15%;
+        h1 {
+          @include fontstyle(1.8rem, 600, #e0b23f);
+        }
+      }
+      .diamond {
+        width: 15%;
+        h1 {
+          @include fontstyle(1.8rem, 600, #64d3ed);
+        }
+      }
+    }
+    .width-col {
+      width: 40%;
+      h1 {
+        @include fontstyle(1.6rem, 400, $black);
+      }
+    }
+  }
+}
+@media screen and (max-width:992px){
+  // Modal table
+  .table-modal-wrapper{
+  .table-modal-container {
+    max-width: 90%;
+  }}
+}
 @media screen and (max-width: 768px) {
   .modal-container {
     max-width: 60rem;
@@ -175,6 +249,9 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .gayeb{
+    display: none;
+  }
   .modal-container {
     max-width: 40rem;
   }

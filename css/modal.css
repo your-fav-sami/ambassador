@@ -293,6 +293,82 @@ aside {
   color: #000;
 }
 
+.table-modal-wrapper .table-modal-container {
+  max-width: 920px;
+}
+.table-modal-wrapper .table-wrapper .side-border {
+  border-left: 3px solid #B3B3B3;
+  border-right: 3px solid #B3B3B3;
+}
+.table-modal-wrapper .table-wrapper .bottom-border {
+  border-bottom: 3px solid #b3b3b3;
+}
+.table-modal-wrapper .table-wrapper .head-row td {
+  border: none;
+}
+.table-modal-wrapper .table-wrapper .head-row .top-border {
+  border-top: 3px solid #b3b3b3;
+  border-left: 3px solid #B3B3B3;
+  border-right: 3px solid #B3B3B3;
+  border-radius: 8px;
+}
+.table-modal-wrapper .table-wrapper .head-row h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #cccccc;
+}
+.table-modal-wrapper .table-wrapper .head-row .ambassador {
+  width: 15%;
+}
+.table-modal-wrapper .table-wrapper .head-row .ambassador h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #d39750;
+}
+.table-modal-wrapper .table-wrapper .head-row .elite {
+  width: 15%;
+  padding-top: 30px;
+}
+.table-modal-wrapper .table-wrapper .head-row .elite img {
+  width: 40px;
+  top: -30px;
+  transform: translate(-50%, 0%);
+}
+.table-modal-wrapper .table-wrapper .head-row .elite h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #b3b3b3;
+}
+.table-modal-wrapper .table-wrapper .head-row .premier {
+  width: 15%;
+}
+.table-modal-wrapper .table-wrapper .head-row .premier h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #e0b23f;
+}
+.table-modal-wrapper .table-wrapper .head-row .diamond {
+  width: 15%;
+}
+.table-modal-wrapper .table-wrapper .head-row .diamond h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #64d3ed;
+}
+.table-modal-wrapper .table-wrapper .width-col {
+  width: 40%;
+}
+.table-modal-wrapper .table-wrapper .width-col h1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+}
+
+@media screen and (max-width: 992px) {
+  .table-modal-wrapper .table-modal-container {
+    max-width: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   .modal-container {
     max-width: 60rem;
@@ -305,6 +381,9 @@ aside {
   }
 }
 @media screen and (max-width: 576px) {
+  .gayeb {
+    display: none;
+  }
   .modal-container {
     max-width: 40rem;
   }
