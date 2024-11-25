@@ -183,6 +183,44 @@ aside {
   border: none;
   outline: none;
 }
+.main .content-wrapper {
+  height: 70vh;
+}
+.main .content-wrapper .content h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #000;
+}
+.main .content-wrapper .content h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #000;
+}
+.main .content-wrapper .content button {
+  width: 14rem;
+  height: 4rem;
+  border-radius: 2.5rem;
+  background-color: #307DFF;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.main .content-wrapper .content button:hover {
+  width: 14rem;
+  height: 4rem;
+  border-radius: 2.5rem;
+  background-color: transparent;
+  color: #307DFF;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border: 1px solid #307DFF;
+}
 
 @media screen and (max-width: 992px) {
   .main .card-container .card {
@@ -207,5 +245,27 @@ aside {
     font-size: 1.6rem;
     font-weight: 500;
     color: #000;
+  }
+  .main .content-wrapper .content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+  }
+  .main .content-wrapper .content h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+  }
+  .main .content-wrapper .content button {
+    width: 100px;
+    height: 30px;
+    border-radius: 2.5rem;
+    background-color: #307DFF;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
   }
 }/*# sourceMappingURL=congratulations.css.map */

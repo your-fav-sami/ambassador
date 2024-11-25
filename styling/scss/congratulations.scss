@@ -67,6 +67,25 @@
       }
     }
   }
+  .content-wrapper{
+    height: 70vh;
+   .content{
+    h1{
+      @include fontstyle(8rem,700,$black);
+    }
+    h2{
+      @include fontstyle(1.8rem,400,$black);
+    }
+    button{
+      @include button(14rem,4rem,2.5rem,$blue-307,$white,1.6rem,600);
+      &:hover{
+      @include button(14rem,4rem,2.5rem,transparent,$blue-307,1.6rem,600);
+
+border: 1px solid $blue-307;
+      }
+    }
+   }
+  }
 }
 @media screen and (max-width: 992px) {
   .main {
@@ -109,7 +128,21 @@
           }
         }
       }
+      .content-wrapper{
+        .content{
+         h1{
+           @include fontstyle(32px,700,$black );
+         }
+         h2{
+           @include fontstyle(16px,400,$black);
+         }
+         button{
+           @include button(100px,30px,2.5rem,$blue-307,$white,12px,600)
+         }
+        }
+       }
     }
+    
   }
   
   
